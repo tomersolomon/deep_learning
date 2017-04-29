@@ -36,7 +36,7 @@ for file in os.listdir('./Images/'):
         url_complete.append(os.path.join('Images/',file))
        
 #for running 
-url_complete_local = url_complete[1:1000:100]
+url_complete_local = url_complete[1:1000:50]
 url_complete_local
 
 #create X matrix
@@ -58,7 +58,6 @@ for url in url_complete_local:
     dropped.append('_'.join(map(str, url.rsplit('_')[:-1])) )
     
 y = pd.Series(dropped,dtype='category').values.codes
-
 
 #load in model
 pet_model = applications.VGG16(include_top=False,
