@@ -16,7 +16,7 @@ Dropout Scores
 Test loss: 0.148
 Test Accuracy: 0.957
 
-Graphs are on Habanero. 
+Final graphs are on Habanero. These are graphs that were generated locally.
 
 ### Task 3
 

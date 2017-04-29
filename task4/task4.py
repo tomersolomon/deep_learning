@@ -36,7 +36,7 @@ for file in os.listdir('./Images/'):
         url_complete.append(os.path.join('Images/',file))
        
 #for running 
-url_complete_local = url_complete[1:3]
+url_complete_local = url_complete[1:1000:100]
 url_complete_local
 
 #create X matrix
@@ -57,9 +57,8 @@ dropped = []
 for url in url_complete_local:
     dropped.append('_'.join(map(str, url.rsplit('_')[:-1])) )
     
-numbers = pd.Series(dropped,dtype='category').values.codes
+y = pd.Series(dropped,dtype='category').values.codes
 
-y = keras.utils.to_categorical(numbers, num_classes)
 
 #load in model
 pet_model = applications.VGG16(include_top=False,
