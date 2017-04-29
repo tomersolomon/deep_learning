@@ -3,8 +3,8 @@
 
 ### Task 1
 
-Test loss: 0.721
-Test Accuracy: 0.579
+Test loss: 0.137
+Test Accuracy: 0.974
 
 ### Task 2
 

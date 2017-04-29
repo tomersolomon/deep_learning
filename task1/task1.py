@@ -16,6 +16,8 @@ from sklearn.model_selection import train_test_split
 
 from keras.models import Sequential
 from keras.layers import Dense, Activation
+from keras.optimizers import SGD
+
 import keras 
 
 iris_dataset = load_iris()
@@ -43,7 +45,7 @@ model.summary()
 
 model.compile("adam", "categorical_crossentropy", metrics=['accuracy'])
 
-model.fit(X_train, y_train, batch_size=5000, epochs=10, verbose=1)
+model.fit(X_train, y_train, batch_size=2000, epochs=100, verbose=1)
 
 score = model.evaluate(X_test, y_test, verbose=0)
 print("Test loss: {:.3f}".format(score[0]))
