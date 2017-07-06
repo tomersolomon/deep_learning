@@ -3,6 +3,8 @@
 
 This is example of my work with neural networks, adapted from Andreas Mueller's Applied Machine Learning course (namley HW #5). Specifically, I used Keras Sequential interface (which uses Tensorflow as the backend). These tasks were run on an external GPU (specifically the Habanero computer cluster) because of the processing time recquired to determine the necessary parameters in a neural network, which was also a good experience for me. This was a great foray into seeing how powerful deep learning is and learning (no pun inteded) how to implement models in real life. 
 
+In general, I'd like to take the time to acknowledge how great of a class Applied Machine Learning was in both teaching machine learning fundamentals and helping me learn the specifics of how to go from problem to data cleaning to model implementation to conclusion. The general syllabus for this course can be found here: https://amueller.github.io/applied_ml_spring_2017/lectures.html. 
+
 THe assignments are organized via Task folders, and the prompt summaries are below. 
 
 Homework #5: https://docs.google.com/document/d/1L-VoM88gJ1avThtdWuHHA3K8TpvvIn1jQiXZYt0UCSM/edit# 
